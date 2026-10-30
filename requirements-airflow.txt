@@ -1,0 +1,5 @@
+# Install with the constraints file matching your existing Airflow/Python version.
+# The DAG uses the Airflow 2 PythonOperator API.
+apache-airflow>=2.8,<3
+apache-airflow-providers-google
+apache-airflow-providers-postgres

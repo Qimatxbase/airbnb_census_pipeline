@@ -1,0 +1,11 @@
+version: 2
+sources:
+  - name: raw
+    schema: bronze
+    description: Academic source tables loaded by the manually triggered Airflow DAG.
+    tables:
+      - name: airbnb_raw
+      - name: census_g01_raw
+      - name: census_g02_raw
+      - name: nsw_lga_code_raw
+      - name: nsw_lga_suburb_raw

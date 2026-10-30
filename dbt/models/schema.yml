@@ -1,0 +1,23 @@
+version: 2
+models:
+  - name: fact_listing
+    description: One listing per evidenced source month; estimated revenue is a proxy.
+    columns:
+      - name: listing_id
+        tests: [not_null]
+      - name: month
+        tests: [not_null]
+  - name: host_history
+    description: Monthly host observation intervals, not exact attribute change timestamps.
+    columns:
+      - name: host_id
+        tests: [not_null]
+      - name: valid_from
+        tests: [not_null]
+  - name: property_history
+    description: Monthly property observation intervals rebuilt from all available source months.
+    columns:
+      - name: listing_id
+        tests: [not_null]
+      - name: valid_from
+        tests: [not_null]
